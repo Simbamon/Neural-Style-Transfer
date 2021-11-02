@@ -8,7 +8,7 @@ st.title("Cloud Pak for Data X PyTorch")
 
 img = st.sidebar.selectbox(
     '이미지를 선택하세요',
-    ('amber.jpg', 'asd.jpg', 'wc_protaction.png')
+    ('amber.jpg', 'profile.jpg', 'poster.jpg', 'city.jpg', 'nature.jpg')
 )
 
 style_name = st.sidebar.selectbox(
@@ -42,3 +42,9 @@ if clicked:
     col3.image(image, width=420)
 
 
+hide_streamlit_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
